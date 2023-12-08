@@ -1,0 +1,55 @@
+/* Define variables for common colors and values */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: white;
+    --background-color: #f8f8f8;
+    --border-radius: 4px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-page {
+    max-width: 80vw;
+    /* Responsive design with media queries recommended */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    /* Improved font size for hierarchy */
+}
+
+.form-questions {
+    margin-bottom: 20px;
+    display: flex;
+    /* Consider flexbox for layout flexibility */
+    flex-direction: column;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    /* Align buttons on right */
+}
+
+.add-button,
+.submit-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+.add-button:hover,
+.submit-button:hover {
+    background-color: #45a049;
+}

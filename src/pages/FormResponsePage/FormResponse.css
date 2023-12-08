@@ -1,0 +1,84 @@
+.form-container {
+	padding: 1.25rem;
+	height: inherit;
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.response-form-title {
+	font-family: Mulish;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.form-footer {
+	margin: 1.25rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.btn {
+	cursor: pointer;
+	height: 1.875rem;
+	width: fit-content;
+	border: 0.0625rem solid grey;
+	border-radius: 0.625rem;
+	background-color: #f7f7f7;
+	padding: 0px 0.625rem;
+}
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 50rem;
+}
+
+.error {
+	margin: 1.25rem;
+	color: #f32013;
+	font-weight: bolder;
+}
+.draggable-option {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin: 4px;
+    cursor: move;
+    background-color: #fff; /* White background */
+}
+
+/* Styles for DropableOption */
+.dropable-option {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin: 4px;
+    cursor: move;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.dropable-option.active {
+    background-color: lightyellow; /* Highlight when item is dragged over */
+}
+.options-container {
+    display: flex;
+    justify-content:space-between;
+}
+
+.draggable-column,
+.droppable-column {
+    width: 48%; /* Adjust the width as needed */
+}
+
+/* Optional: Add styling for better visibility */
+.draggable-column {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.droppable-column {
+    background-color: #e0e0e0;
+    padding: 10px;
+	margin-left: 30px;
+}
